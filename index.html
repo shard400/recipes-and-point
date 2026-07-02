@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рецепты и точка — Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Vector.png" alt="Логотип Рецепты и точка">
+                </a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="search.html">Поиск</a></li>
+                    <li><a href="collections.html">Коллекции</a></li>
+                    <li><a href="chefs.html">Шеф-повара</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                </ul>
+                <div class="auth-links">
+                    <a href="auth.html" class="btn btn-outline">Вход</a>
+                    <a href="auth.html" class="btn btn-primary">Регистрация</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Найди рецепт по душе</h1>
+                <p class="subtitle" style="border: px;">Миллионы рецептов, удобный поиск и полезные подборки</p>
+                <form class="hero-search" action="search.html">
+                    <input type="text" placeholder="Поиск рецептов (например: курица, паста, салат)">
+                    <button type="submit" class="btn-src">Найти</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Категории</h2>
+                </div>
+                <div class="categories-grid">
+                    <a href="search.html?cat=soups" class="category-card">
+                        <div class="category-icon"><img src="img/green-icon/icons8-суп-50.png" alt="" class="food-icon"></div>
+                        <p>Супы</p>
+                    </a>
+                    <a href="search.html?cat=salads" class="category-card">
+                        <div class="category-icon"><img src="img/green-icon/icons8-салат-50.png" alt="" class="food-icon"></div>
+                        <p>Салаты</p>
+                    </a>
+                    <a href="search.html?cat=mains" class="category-card">
+                        <div class="category-icon"><img src="img/green-icon/icons8-стейк-50.png" alt="" class="food-icon"></div>
+                        <p>Вторые блюда</p>
+                    </a>
+                    <a href="search.html?cat=baking" class="category-card">
+                        <div class="category-icon"><img src="img/green-icon/icons8-хлеб-50.png" alt="" class="food-icon"></div>
+                        <p>Выпечка</p>
+                    </a>
+                    <a href="search.html?cat=desserts" class="category-card">
+                        <div class="category-icon"><img src="img/green-icon/icons8-десерт-50.png" alt="" class="food-icon"></div>
+                        <p>Десерты</p>
+                    </a>
+                    <a href="search.html?cat=drinks" class="category-card">
+                        <div class="category-icon"><img src="img/green-icon/icons8-напиток-50.png" alt="" class="food-icon"></div>
+                        <p>Напитки</p>
+                    </a>
+                    <a href="search.html?cat=snacks" class="category-card">
+                        <div class="category-icon"><img src="img/green-icon/icons8-закуска-50.png" alt="" class="food-icon"></div>
+                        <p>Закуски</p>
+                    </a>
+                    <a href="search.html?cat=pp" class="category-card">
+                        <div class="category-icon"><img src="img/green-icon/icons8-здоровое-питание-50-зелен.png" alt="" class="food-icon"></div>
+                        <p>ПП</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="recipes-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Рецепты дня</h2>
+                    <a href="search.html">Все рецепты →</a>
+                </div>
+                <div class="recipe-grid">
+                    <div class="recipe-card">
+                        <img src="img/lj6xyzZoa1kVViU2hleRwWggk3uBpcFZia9p0snW_1200.png" alt="Паста с курицей">
+                        <div class="recipe-info">
+                            <h3>Паста с курицей в сливках</h3>
+                            <div class="meta">
+                                <span>⏱ 30 мин</span>
+                                <span>🔥 450 ккал</span>
+                            </div>
+                            <span class="recipe-tag">Вторые блюда</span>
+                        </div>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="img/салат-цезарь-с-курицей.jpg" alt="Салат Цезарь">
+                        <div class="recipe-info">
+                            <h3>Классический салат Цезарь</h3>
+                            <div class="meta">
+                                <span>⏱ 20 мин</span>
+                                <span>🔥 280 ккал</span>
+                            </div>
+                            <span class="recipe-tag">Салаты</span>
+                        </div>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="img/25854-ed4_big_wide.jpg" alt="Суп грибной">
+                        <div class="recipe-info">
+                            <h3>Суп грибной с картофелем</h3>
+                            <div class="meta">
+                                <span>⏱ 45 мин</span>
+                                <span>🔥 200 ккал</span>
+                            </div>
+                            <span class="recipe-tag">Супы</span>
+                        </div>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="img/shutterstock_1774718039_1686318549-e1686318588438.jpg" alt="Панна-котта">
+                        <div class="recipe-info">
+                            <h3>Панна-котта с ягодами</h3>
+                            <div class="meta">
+                                <span>⏱ 4 часа (заморозка)</span>
+                                <span>🔥 320 ккал</span>
+                            </div>
+                            <span class="recipe-tag">Десерты</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-col">
+                    <h4>Рецепты и точка</h4>
+                    <ul>
+                        <li><a href="#">О проекте</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Реклама</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="search.html">Поиск рецептов</a></li>
+                        <li><a href="collections.html">Коллекции</a></li>
+                        <li><a href="chefs.html">Шеф-повара</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="#">Правила использования</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Помощь</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Соцсети</h4>
+                    <ul>
+                        <li><a href="#">VK</a></li>
+                        <li><a href="#">Telegram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Рецепты и точка. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

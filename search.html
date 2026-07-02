@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рецепты и точка — Поиск</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Vector.png" alt="Логотип Рецепты и точка">
+                </a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="search.html" class="active">Поиск</a></li>
+                    <li><a href="collections.html">Коллекции</a></li>
+                    <li><a href="chefs.html">Шеф-повара</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                </ul>
+                <div class="auth-links">
+                    <a href="auth.html" class="btn btn-outline">Вход</a>
+                    <a href="auth.html" class="btn btn-primary">Регистрация</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-page-header">
+            <div class="container">
+                <h1>Поиск рецептов</h1>
+                <form class="hero-search" action="search.html">
+                    <input type="text" placeholder="Поиск рецептов (например: курица, паста, салат)" value="курица">
+                    <button type="submit">Найти</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="search-filters-section">
+            <div class="container">
+                <div class="search-filters">
+                    <div class="filter-group">
+                        <label>Категория</label>
+                        <select>
+                            <option>Все категории</option>
+                            <option>Супы</option>
+                            <option>Салаты</option>
+                            <option>Вторые блюда</option>
+                            <option>Десерты</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Калорийность</label>
+                        <select>
+                            <option>Любая</option>
+                            <option>До 300 ккал</option>
+                            <option>300–600 ккал</option>
+                            <option>Более 600 ккал</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Время</label>
+                        <select>
+                            <option>Любое</option>
+                            <option>До 30 мин</option>
+                            <option>30–60 мин</option>
+                            <option>Более 60 мин</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Диета</label>
+                        <select>
+                            <option>Любая</option>
+                            <option>Низкокалорийная</option>
+                            <option>Вегетарианская</option>
+                            <option>Безглютеновая</option>
+                        </select>
+                    </div>
+                    <div class="filter-group full-width">
+                        <label>Ингредиенты</label>
+                        <input type="text" placeholder="Например: рис, помидоры, сливки">
+                    </div>
+                </div>
+
+                <div class="recipe-grid">
+                    <div class="recipe-card">
+                        <img src="img/maxresdefault.jpg" alt="Курица в сливках">
+                        <div class="recipe-info">
+                            <h3>Курица в сливках с грибами</h3>
+                            <div class="meta">
+                                <span>⏱ 35 мин</span>
+                                <span>🔥 420 ккал</span>
+                            </div>
+                            <span class="recipe-tag">Вторые блюда</span>
+                        </div>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="img/Салат с курицей и авокадо.jpg" alt="Салат с курицей">
+                        <div class="recipe-info">
+                            <h3>Салат с курицей и авокадо</h3>
+                            <div class="meta">
+                                <span>⏱ 25 мин</span>
+                                <span>🔥 340 ккал</span>
+                            </div>
+                            <span class="recipe-tag">Салаты</span>
+                        </div>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="img/Суп куриный с лапшой.png" alt="Суп куриный">
+                        <div class="recipe-info">
+                            <h3>Суп куриный с лапшой</h3>
+                            <div class="meta">
+                                <span>⏱ 50 мин</span>
+                                <span>🔥 180 ккал</span>
+                            </div>
+                            <span class="recipe-tag">Супы</span>
+                        </div>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="img/Котлеты куриные с сыром.jpg" alt="Котлеты куриные">
+                        <div class="recipe-info">
+                            <h3>Котлеты куриные с сыром</h3>
+                            <div class="meta">
+                                <span>⏱ 40 мин</span>
+                                <span>🔥 290 ккал</span>
+                            </div>
+                            <span class="recipe-tag">Вторые блюда</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-col">
+                    <h4>Рецепты и точка</h4>
+                    <ul>
+                        <li><a href="#">О проекте</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Реклама</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="search.html">Поиск рецептов</a></li>
+                        <li><a href="collections.html">Коллекции</a></li>
+                        <li><a href="chefs.html">Шеф-повара</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="#">Правила использования</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Помощь</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Соцсети</h4>
+                    <ul>
+                        <li><a href="#">VK</a></li>
+                        <li><a href="#">Telegram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Рецепты и точка. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
